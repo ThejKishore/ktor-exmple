@@ -1,0 +1,19 @@
+####
+GET http://localhost:9099/employee/
+Authorization: Basic dGVzdDpwYXNzd29yZA==
+
+####
+GET http://localhost:9099/employee/2
+Authorization: Basic dGVzdDpwYXNzd29yZA==
+####
+
+POST http://localhost:9099/employee
+Content-Type: application/json
+Authorization: Basic dGVzdDpwYXNzd29yZA==
+
+{
+  "fname": "Yashashri",
+  "lname": "Karuneegar",
+  "email": "yashashri@gmail.com",
+  "age": 30
+}

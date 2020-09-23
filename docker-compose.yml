@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  app:
+    build: .
+    container_name: ktor_app
+    volumes:
+      - ./:/ktor-example
+    ports:
+      - 9099:9099
+    expose:
+      - 9099
